@@ -310,7 +310,8 @@ class MockBigquery < Minitest::Spec
           "priority" => "INTERACTIVE",
           "allowLargeResults" => nil,
           "useQueryCache" => true,
-          "flattenResults" => nil
+          "flattenResults" => nil,
+          "useLegacySql" => nil
         }
       }
     }.to_json

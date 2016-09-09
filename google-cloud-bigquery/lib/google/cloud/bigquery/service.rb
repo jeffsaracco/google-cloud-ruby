@@ -381,7 +381,8 @@ module Google
                 write_disposition: write_disposition(options[:write]),
                 allow_large_results: options[:large_results],
                 flatten_results: options[:flatten],
-                default_dataset: default_dataset
+                default_dataset: default_dataset,
+                use_legacy_sql: options[:use_legacy_sql]
               )
             )
           )

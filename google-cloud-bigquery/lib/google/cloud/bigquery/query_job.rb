@@ -98,6 +98,14 @@ module Google
                          table.table_id
         end
 
+       ##
+       # Checks if the query job using legacy SQL.
+       def use_legacy_sql?
+         val = config["query"]["useLegacySql"]
+         val.nil? ? true : val
+       end
+
+
         ##
         # Retrieves the query results for the job.
         #
